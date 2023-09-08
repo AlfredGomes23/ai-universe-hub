@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Universe Hub</title>
+    <!-- daisy ui & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'work-sans': ['Work Sans'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header></header>
-    <main></main>
+
+<body class="font-work-sans">
+    <header class="text-center m-5 p-5">
+        <h1 class="text-[#111] text-3xl md:text-4xl font-semibold mb-4">AI Universe Hub</h1>
+        <button class="text-[#fff] text-xl font-semibold bg-[#EB5757] rounded-xl md:rounded-2xl p-2 md:p-4" id="sort-btn">Sort By Date</button>
+    </header>
+    <main>
+        <section class="" id="card-container">
+            <!-- card container -->
+        </section>
+    </main>
 </body>
+
 </html>
